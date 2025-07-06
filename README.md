@@ -1,1 +1,6 @@
-# Sound-Clustering-HMMs
+# Sound-Clustering-HMMs Assignment
+## Part 1: Sound Clustering 
+This repository contains a Jupyter notebook that performs unsupervised clustering on 3,000 unlabelled .wav audio files. Mel Spectrogram features are extracted using Librosa, visualized in raw form, and reduced via PCA and t-SNE. Clustering is conducted with K-Means (optimized using the elbow method and silhouette score) and DBSCAN (tuned for eps and min_samples). The analysis compares PCA vs. t-SNE separability and K-Means vs. DBSCAN performance, using 3D visualizations, silhouette scores, and Davies-Bouldin indices. Code is modular, leveraging an AudioFeatureExtractor class and well-documented functions.
+
+## Part 2: HMM for Agrika
+Agrika predicts agricultural equipment failures for Rwandan smallholder farmers using historical maintenance logs (IoT sensors planned for future work). A Hidden Markov Model (HMM) models equipment health states (e.g., normal, degraded) from time-series data: vibration, temperature, usage, and maintenance events. This unsupervised learning problem uses the Baum-Welch algorithm to learn hidden states, transition probabilities, emission probabilities, and initial state distribution, enabling failure prediction and SMS-based maintenance alerts to reduce downtime.
